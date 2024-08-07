@@ -1,9 +1,12 @@
+-- Ensure Game is Loaded and Player is Available
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 
--- Script 1 settings
+-- Settings for the First Script
 getgenv().Key = "18d2255f377911f770f36212"
-getgenv().TargetUnitRoll = {"Admiral Of Lava"}
-getgenv().notRollUnitTarget = true
+getgenv().TargetUnitRoll = {
+    "Admiral Of Lava"
+}
+getgenv().notRollUnitTarget = false
 getgenv().UseSavePosition = false
 getgenv().GemRollUnit = 2500
 getgenv()["Black Screen"] = true
@@ -22,27 +25,20 @@ getgenv().Webhook =  {
     ["Story/Infinite"] = true,
 }
 
--- Load Script 1
-repeat
-    local success, err = pcall(function() 
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaCat-KaitunAD.lua"))()
-    end)
-    if success then break end
-    wait(1)
-until false
+-- Load the First Script
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaCat-KaitunAD.lua"))()
 
--- Script 2 settings
+-- Ensure Game is Loaded before Running Hermanos Script
+repeat task.wait() until game:IsLoaded() 
+
+-- Settings for the Hermanos Script
 getgenv().Hermanos_Settings = {
     ['key'] = 'da8b17df-484c-409f-ad9e-841e94748b1b',
     ['PC'] = 'VPS-1',
-    ['mode'] = 'Website', --- Duo, Description, Website
+    ['mode'] = 'Website' --- Duo, Description, Website
 }
 
--- Load Script 2
-repeat
-    local success, err = pcall(function() 
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() 
-    end)
-    if success then break end
-    wait(1)
-until false
+-- Load the Hermanos Script
+task.spawn(function() 
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/hermanos-dev/hermanos-script/main/ad-main.lua'))() 
+end)
