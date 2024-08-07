@@ -2,21 +2,26 @@
 repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 
 -- Settings for the First Script
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer
 getgenv().Key = "18d2255f377911f770f36212"
 getgenv().TargetUnitRoll = {
     "Admiral Of Lava"
-@@ -10,8 +13,8 @@ getgenv()["Black Screen"] = true
+}
+getgenv().notRollUnitTarget = true
+getgenv().UseSavePosition = false
+getgenv().GemRollUnit = 2500
+getgenv()["Black Screen"] = true
 getgenv()["Auto Leave Infinite"] = {
     ["Auto Leave"] = true,
     ["Method"] = {
-        ["Sell"] = false,
-        ["Leave"] = true,
         ["Sell"] = true,
         ["Leave"] = false,
     },
     ["Wave"] = 31
 }
-@@ -21,4 +24,21 @@ getgenv().Webhook =  {
+getgenv().Webhook =  {
+    ["Webhook"] = true,
+    ["Url"] = "https://ptb.discord.com/api/webhooks/1249399352347332670/kc5DNYM9mvCqQ37ENmKx1OIcEcss1enE8rmg1cTqdLJ0eIABFXcrjz2tgyhOmVt78J2n",
     ["Roll Unit"] = false,
     ["Story/Infinite"] = true,
 }
