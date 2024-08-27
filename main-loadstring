@@ -1,10 +1,10 @@
-script_key = "MmVbcWftmlMmXwJbTHRJHCPKCwrFcDNN"
+script_key = ""
 getgenv().Setting = {
     BlackScreen = true,
     RandomAiMover = true,
     CapFps = true,
     FpsBoost = true,
-    WebhookUrl = "https://ptb.discord.com/api/webhooks/1249540335248347136/bR-G5Qq05ybBrr0uVN1vZr79FJETkRZQNQIAmwkTg2Qzirjk8HV44iaOIfh3XnXjDyxN",
+    WebhookUrl = "",
     OneClickNewSetting = { 
         Enable = true,
         Feed = true,
