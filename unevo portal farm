@@ -61,10 +61,10 @@ getgenv().Config = {
     ["Hide Key"] = "U",
     ["Macros Selected"] = {
         ["Challenge"] = {
-            ["MobCity"] = "mob_unevo"
+            ["MobCity"] = "unevo_mobstory"
         },
         ["Infinite"] = {
-            ["MobCity"] = "mob_unevo"
+            ["MobCity"] = "unevo_mobstory"
         },
         ["HallOfMirrors"] = {
             ["Normal"] = "",
@@ -73,11 +73,11 @@ getgenv().Config = {
             ["Easy"] = ""
         },
         ["Portal"] = {
-            ["Demon"] = "portal_unevo"
+            ["Demon"] = "unevo_portal"
         },
         ["Raid"] = {},
         ["Story"] = {
-            ["MobCity"] = "mob_unevo"
+            ["MobCity"] = "unevo_mobstory"
         },
         ["Tower"] = {
             ["Map1"] = "",
