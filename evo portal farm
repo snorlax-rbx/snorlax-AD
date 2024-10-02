@@ -61,10 +61,10 @@ getgenv().Config = {
     ["Hide Key"] = "U",
     ["Macros Selected"] = {
         ["Challenge"] = {
-            ["MobCity"] = "evo_woop_mob"
+            ["MobCity"] = "evo_mobstory"
         },
         ["Infinite"] = {
-            ["MobCity"] = "evo_woop_mob"
+            ["MobCity"] = "evo_mobstory"
         },
         ["HallOfMirrors"] = {
             ["Normal"] = "",
@@ -73,11 +73,11 @@ getgenv().Config = {
             ["Easy"] = ""
         },
         ["Portal"] = {
-            ["Demon"] = "evo_woop_yuno_portal"
+            ["Demon"] = "evo_portal"
         },
         ["Raid"] = {},
         ["Story"] = {
-            ["MobCity"] = "evo_woop_mob"
+            ["MobCity"] = "evo_mobstory"
         },
         ["Tower"] = {
             ["Map1"] = "",
