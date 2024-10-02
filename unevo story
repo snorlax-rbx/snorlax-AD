@@ -61,7 +61,7 @@ getgenv().Config = {
         },
         ["Story"] = {
             ["FooshaVillage"] = "woop_wind",
-            ["MobCity"] = "mob_unevo"
+            ["MobCity"] = "unevo_mobstory"
         },
         ["Raid"] = {},
         ["Portal"] = {},
