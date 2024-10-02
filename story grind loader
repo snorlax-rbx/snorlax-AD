@@ -1,0 +1,39 @@
+local player = game.Players.LocalPlayer
+
+-- THIS IS LOADER FOR MOB STORY GRIND
+-- player names for evo aether
+local firstScriptPlayers = {
+    "mixuesarap6",
+    "mixuesarap7",
+	"mixuesarap8",
+    "mixuesarap9",
+    "mixuesarap10"
+}
+
+-- player names for unevo aether
+local secondScriptPlayers = {
+    "mixuesarap1",
+    "mixuesarap2",
+	"mixuepeach3",
+	"3point5struc2",
+	"mixuesarap5"
+}
+
+-- Function to check if player is in a list
+local function isPlayerInList(playerName, playerList)
+    for _, name in pairs(playerList) do
+        if playerName == name then
+            return true
+        end
+    end
+    return false
+end
+
+-- Check which script to run based on the player's name
+if isPlayerInList(player.Name, firstScriptPlayers) then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/snorlax-rbx/snorlax-AD/refs/heads/main/evo%20story"))()
+elseif isPlayerInList(player.Name, secondScriptPlayers) then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/snorlax-rbx/snorlax-AD/refs/heads/main/unevo%20story"))()
+else
+    print("Player not recognized")
+end
