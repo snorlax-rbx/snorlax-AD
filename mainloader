@@ -1,6 +1,6 @@
 local player = game.Players.LocalPlayer
 
--- THIS IS LOADER FOR MOB STORY GRIND
+-- THIS IS LOADER FOR PORTAL GRIND
 -- player names for evo aether
 local firstScriptPlayers = {
     "mixuesarap6",
@@ -31,9 +31,9 @@ end
 
 -- Check which script to run based on the player's name
 if isPlayerInList(player.Name, firstScriptPlayers) then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/snorlax-rbx/snorlax-AD/refs/heads/main/evo%20story"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/snorlax-rbx/snorlax-AD/refs/heads/main/evo%20portal%20farm"))()
 elseif isPlayerInList(player.Name, secondScriptPlayers) then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/snorlax-rbx/snorlax-AD/refs/heads/main/unevo%20story"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/snorlax-rbx/snorlax-AD/refs/heads/main/unevo%20portal%20farm"))()
 else
     print("Player not recognized")
 end
