@@ -61,10 +61,10 @@ getgenv().Config = {
     ["Hide Key"] = "U",
     ["Macros Selected"] = {
         ["Challenge"] = {
-            ["MobCity"] = "woop_mob"
+            ["MobCity"] = "evo_woop_mob"
         },
         ["Infinite"] = {
-            ["MobCity"] = "woop_mob"
+            ["MobCity"] = "evo_woop_mob"
         },
         ["HallOfMirrors"] = {
             ["Normal"] = "",
