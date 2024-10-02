@@ -73,11 +73,11 @@ getgenv().Config = {
             ["Easy"] = ""
         },
         ["Portal"] = {
-            ["Demon"] = "woop_yuno_portal"
+            ["Demon"] = "evo_woop_yuno_portal"
         },
         ["Raid"] = {},
         ["Story"] = {
-            ["MobCity"] = "woop_mob"
+            ["MobCity"] = "evo_woop_mob"
         },
         ["Tower"] = {
             ["Map1"] = "",
