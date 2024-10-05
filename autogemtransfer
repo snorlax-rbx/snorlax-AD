@@ -1,0 +1,63 @@
+local player = game.Players.LocalPlayer
+ 
+-- accounts
+local accounts = {
+    ["mixuesarap1"] = {"mixuepeach3", "3point5struc2", "mixuesarap5", "mixuesarap6"},
+    ["mixuesarap2"] = {"mixuesarap7", "mixuesarap8", "mixuesarap9", "mixuesarap10"},
+}
+ 
+local function getAccountType(playerName)
+    for mainAccount, subAccounts in pairs(accounts) do
+        if playerName == mainAccount then
+            return "main", mainAccount
+        elseif table.find(subAccounts, playerName) then
+            return "sub", mainAccount
+        end
+    end
+    return nil, nil -- If player is neither in main nor sub-accounts list
+end
+ 
+local accountType, associatedMainAccount = getAccountType(player.Name)
+ 
+if accountType == "main" then
+    -- Main account script
+    script_key = "MmVbcWftmlMmXwJbTHRJHCPKCwrFcDNN"
+    getgenv().SelectedPlayer = player.Name -- Main Account name, to which gems will be sent
+    getgenv().MainAccount = true -- Set True if it's the account to receive gems
+    getgenv().AccountForMainToFolow = ""
+    getgenv().EnableAccountForMainFolow = false -- Main joins a low server with an account already in server
+    getgenv().MainAccountSetting = { -- Unit To Sell
+        Units = {"Electric Cyborg", "Magic Arrow", "Legion Veteran", "Legion Assassin", "Blood Demon", "Fire Swordsman", "Magic Arrow", "Cursed Archer", "Ocean Guardian"},
+        ManuallyClaimBooth = false,
+    }
+    getgenv().AltAccountSetting = {
+        Trade = true,
+        NotSendGem = false,
+        TradeItems = {"Trait Crystal", "Risky Dice"},
+        GiveBackUnit = true,
+        KickAfterDoneTrade = true,
+    }
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
+ 
+elseif accountType == "sub" then
+    -- Sub account script
+    script_key = "MmVbcWftmlMmXwJbTHRJHCPKCwrFcDNN"
+    getgenv().SelectedPlayer = associatedMainAccount -- Main Account name that the sub-account will send gems to
+    getgenv().MainAccount = false -- Set False because it's a sub account
+    getgenv().AccountForMainToFolow = ""
+    getgenv().EnableAccountForMainFolow = false -- Main joins a low server with an account already in server
+    getgenv().MainAccountSetting = { -- Unit To Sell
+        Units = {"Electric Cyborg", "Magic Arrow", "Legion Veteran", "Legion Assassin", "Blood Demon", "Fire Swordsman", "Magic Arrow", "Cursed Archer", "Ocean Guardian"},
+        ManuallyClaimBooth = false,
+    }
+    getgenv().AltAccountSetting = {
+        Trade = true,
+        NotSendGem = false,
+        TradeItems = {"Trait Crystal", "Risky Dice"},
+        GiveBackUnit = true,
+        KickAfterDoneTrade = true,
+    }
+    loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3051457467c11f25288cfe2de3708373.lua"))()
+else
+    print("WOMP WOMP")
+end
