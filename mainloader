@@ -5,9 +5,9 @@ local player = game.Players.LocalPlayer
 local firstScriptPlayers = {
     "mixuesarap6",
     "mixuesarap7",
-	"mixuesarap8",
+    "mixuesarap8",
     "mixuesarap9",
-    "mixuesarap10"
+    "mixuesarap10",
     "gabcutiee_5"
 }
 
@@ -17,10 +17,10 @@ local secondScriptPlayers = {
     "mixuesarap2",
 	"mixuepeach3",
 	"3point5struc2",
-	"mixuesarap5"
-	"gabcutiee_1"
-	"gabcutiee_2"
-	"gabcutiee_3"
+	"mixuesarap5",
+	"gabcutiee_1",
+	"gabcutiee_2",
+	"gabcutiee_3",
 	"gabcutiee_4"
 }
 
